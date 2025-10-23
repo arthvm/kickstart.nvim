@@ -7,6 +7,9 @@ set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Diagnostic keymaps
 set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
+set('n', '<leader>x', '<cmd>.lua<CR>', { desc = 'Execute the current line' })
+set('n', '<leader><leader>x', '<cmd>source %<CR>', { desc = 'Execute the current file' })
+
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
